@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Start Screen -->
+<div class="container" id="start-screen">
+  <h1>Python Quiz</h1>
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<!-- Quiz Screen -->
+<div class="container hide" id="quiz-screen">
+  <h2 id="question"></h2>
+  <div id="options"></div>
+  <p>Time: <span id="time">00:00</span></p>
+  <button id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+</div>
+
+<!-- Result Screen -->
+<div class="container hide" id="result-screen">
+  <h1>Result</h1>
+  <p id="result-text"></p>
+  <button onclick="restartQuiz()">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
